@@ -1,0 +1,42 @@
+{
+  "Workers" : [
+    1, 2, 3, 4
+  ],
+  "Resources" : [
+    { "id": 1,
+      "max_tasks":  2,
+      "available_at_init": "True"
+    },
+    { "id": 2,
+      "max_tasks":  2,
+      "available_at_init": "True"
+    }
+  ],
+  "Tasks" : [
+    { "id": 1,
+      "time":  2,
+      "pre_tasks": [],
+      "num_of_workers_needed": 2,
+      "req_workers": [3],
+      "req_resources": [2],
+      "output_resources": []
+    },
+    { "id": 2,
+      "time":  2,
+      "pre_tasks": [1],
+      "num_of_workers_needed": 2,
+      "req_workers": [],
+      "req_resources": [1],
+      "output_resources": []
+    },
+    { "id": 3,
+      "time":  4,
+      "pre_tasks": [],
+      "num_of_workers_needed": 1,
+      "req_workers": [1, 4],
+      "req_resources": [],
+      "output_resources": []
+    }
+
+  ]
+}
