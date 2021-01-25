@@ -10,7 +10,7 @@ The allocations will be prioritized by 4 parameters:
 
 To use the MissionAllocator you should run it via python3 by the following command:
 
-python main.py <PATH_TO_JSON> <W1> <W2> <W3> <W4>
+python main.py <PATH_TO_JSON> W1 W2 W3 W4
 
 while the W1-W4 are the weights of the aforementioned parameters.
 W1-W4 should be numbers.
